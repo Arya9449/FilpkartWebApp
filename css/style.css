@@ -1,0 +1,1281 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-weight: 500;
+    font-size: 14px;
+    scroll-behavior: smooth;
+}
+
+/* ****************************************** */
+/* END OF BODY CSS AND COMMON CSS START HERE */
+/* **************************************** */
+body {
+    font-size: 14px;
+    background-color: #f1f3f6;
+    color: #212121;
+}
+
+a {
+    font-size: 16px;
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+/* ***************************************** */
+/* END OF BODY CSS AND COMMON CSS ENDS HERE */
+/* *************************************** */
+
+/* ************************************* */
+/* STARTING OF CONTAINER CSS START HERE */
+/* *********************************** */
+#container {
+    height: 100%;
+}
+
+/* ********************** */
+/* HEADER CSS START HERE */
+/* ******************** */
+
+header {
+    height: auto;
+    width: 100%;
+}
+
+/* ****************************** */
+/* TOP NAVIGATION CSS START HERE */
+/* **************************** */
+.navigation_conatiner_top {
+    padding-bottom: 56px;
+    /* min-width: 978px; */
+    position: relative;
+    min-width: var(--width-min);
+}
+
+.top_nav_bar {
+    flex: auto;
+    width: 100%;
+    height: 56px;
+    z-index: 1000;
+    display: flex;
+    position: fixed;
+    color: #f0f0f0;
+    flex-direction: row;
+    will-change: transform;
+    background-color: #2874f0;
+    justify-content: space-around;
+}
+
+.empty {
+    height: 100%;
+    min-width: 124px;
+}
+
+
+.top_nav_list_box {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 1248px;
+}
+
+/* logo css */
+#top_nav_fk_logo {
+    display: flex;
+    margin-top: 5px;
+    justify-content: flex-end;
+    min-width: 137px;
+}
+
+.top_nav_logo_A {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top_nav_logo_img {
+    display: block;
+}
+
+/* ************************** */
+/* SEARCH BAR CSS START HERE */
+/* ************************ */
+
+#top_nav_src_bar {
+    height: 100%;
+    display: flex;
+    min-width: 304px;
+    align-items: center;
+    margin: 0 auto 0 12px;
+    width: calc(100% - 640px);
+    justify-content: flex-start;
+}
+
+.src_Bar_form {
+    z-index: 9;
+    width: 100%;
+    height: 36px;
+    color: #000;
+    max-width: 564px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 0 0 2px 2px;
+    border-top: 1px solid #e0e0e0;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 23%);
+}
+
+.Src_Bar_Div {
+    flex: auto;
+    display: flex;
+    border-radius: 2px;
+    background-color: #fff;
+    justify-content: space-between;
+}
+
+.src_area_div {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+}
+
+#src_bar {
+    border: 0;
+    width: 100%;
+    height: 36px;
+    outline: 0 none;
+    font-size: 14px;
+    padding: 0 16px;
+    border-radius: 2px 0 0 2px;
+}
+
+#top_nav_src_btn {
+    width: 44px;
+    height: 36px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 2px;
+    padding: 4px 12px 0 8px;
+    border: 1px solid #fff;
+    background-color: #fff;
+    justify-content: flex-end;
+}
+
+/* top nav list css */
+.top_nav_list {
+    display: flex;
+    flex: 0 0 auto;
+    margin: 0 26px;
+    outline: none;
+    border: none;
+    max-width: 150px;
+    align-content: center;
+    justify-content: flex-end;
+}
+
+.top_nav_list_A {
+    display: flex;
+    color: #fff;
+    width: 100%;
+    font-weight: 500;
+    line-height: 20px;
+    position: relative;
+    align-items: center;
+    font-size:18px;
+    letter-spacing: .1px;
+}
+
+.login_div {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    height: 100%;
+    line-height: 20px;
+    letter-spacing: .1px;
+    font-weight: 500;
+    color: #fff;
+    user-select: none;
+}
+
+.Login_btn_div {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+}
+
+
+.loGin {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 108px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 36px;
+    width: 108px;
+    font-size:1.5em;
+    font-weight: 550;
+    text-align: center;
+    color: #2874f0;
+    border-radius: 2px;
+    background-color: white;
+    
+}
+
+.down_Arrow {
+    transform: rotate(270deg);
+    margin: 1px 0 0 8px;
+}
+
+
+/* ***************************** */
+/* TOP NAVIGATION CSS ENDS HERE */
+/* *************************** */
+
+/* ********************************* */
+/* BOTTOM NAVIGATION CSS START HERE */
+/* ******************************* */
+.navigation_conatiner_bottom {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 -2 3px;
+    min-width: 978px; */
+    
+    
+    background: #fff;
+    /* background-color: gold; */
+    min-height: 112px;
+    position: relative;
+    color: #000;
+    z-index: 6;
+    
+}
+
+.bottom_nav_bar {
+    width: 100%;
+    display: flex;
+    /* padding-bottom:3px; */
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 16%);
+}
+
+.bottom_nav_catLog {
+    display: flex;
+    width: 100%;
+    color: #212121;
+    position: sticky;
+    max-width: 1280px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.catLogDiv:first-child {
+    padding-left: 22px;
+}
+
+.catLogDiv {
+    padding: 12px 8px;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 4px;
+}
+.cat-log-img-div{
+    height: 64px;
+    width: 64px;
+    position: relative;
+    margin: 0 auto;
+    
+}
+
+.cat_log_img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    opacity: 1;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.cat-log-text-div {
+    font-weight: 500;
+    font-size: 16px;
+    display:block;
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    /* background-color: #172337; */
+}
+.catLogImgHeading{
+    float: left;
+    font-size: 16px;
+    /* background-color: gold; */
+}
+.catLogImgHeading:hover{
+    color:#2874f0;
+    transition:all 0.2s;
+}
+
+/* ******************************** */
+/* BOTTOM NAVIGATION catLogDiv_dP MANU CSS ENDS HERE */
+/* ****************************** */
+.catLogDiv:hover .downArrow{
+    transform: rotate(-180deg);
+    color: #2874f0;
+  }
+  .catLogDiv:hover .Main_cat_heading{
+    color: #2874f0;
+  }
+  .downArrow{
+    transition: all 0.3s;
+    position: relative;
+    top:1px;
+  }
+  .Cat-dropdown_sub{
+    position:absolute;
+  }
+  .Cat_dropdown{
+    background-color:white;
+    width:237px;
+    padding:15px 0;
+    position:relative;
+    left:-237px;
+    display:none;
+    flex-direction: column;
+    align-items: center;
+  }
+  .catLogDiv:hover .Cat_dropdown
+  {
+    display: flex;
+  }
+  .subCat_drop{
+    width: 93%;
+    height:45px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+  }
+  .subCat_drop:hover{
+    background-color:rgba(239, 239, 239, 0.363);
+  }
+  .subCat_list{
+    width:90%;
+    height: 100%;
+    font-weight:550;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .subCat_drop:hover .subCat_heading{
+    color: #2874f0;
+  }
+  .subCat_drop:hover .rightArrow{
+    color: #2874f0;
+  }
+  /* **************************** */
+  /* **************************** */
+  /* **************************** */
+  .SSubCat-dropdown{
+    background-color: white;
+    width: 240px;
+    padding:15px 0;
+    position:absolute;
+    top:0px;
+    left:237px;
+    display:none;
+  }
+  .firstsubCat_drop{
+    background-color: white;
+    width: 240px;
+    padding:15px 0;
+    position:absolute;
+    top:0px;
+    left:237px;
+  }
+  .SubManu_div{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+  }
+  .SSubCatTopHeading{
+    text-align: left;
+    margin:0 8px;
+    width: 93%;
+  }
+  .SsubCat_drop{
+    width: 93%;
+    height:45px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+  }
+  .SsubCat_drop:hover{
+    color: #2874f0;
+    background-color:rgba(239, 239, 239, 0.363);
+  }
+  .SsubCat_drop:hover .SsubCat_heading{
+    color: #2874f0;
+  }
+  .SsubCat_list{
+    width:90%;
+    height: 100%;
+    font-weight:550;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .subCat_drop:hover .SSubCat-dropdown{
+    display: block;
+  }
+  .SsubCat-dropdown li {
+    list-style: none;
+  }
+  .SsubCat-dropdown:hover .subCatH_list{
+    color: #2874f0;
+  }
+  .SSubCatTopHeading{
+    color: gray;
+  }
+/* ******************************** */
+/* BOTTOM NAVIGATION catLogDiv_dP MANU CSS ENDS HERE */
+/* ****************************** */
+
+
+/* ******************************** */
+/* BOTTOM NAVIGATION CSS ENDS HERE */
+/* ****************************** */
+
+/* ********************* */
+/* HEADER CSS ENDS HERE */
+/* ******************* */
+
+/* *********************** */
+/* SECTION CSS START HERE */
+/* ********************* */
+
+.section_1 {
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    min-width: 978px;
+    max-width: 1680px;
+    padding: 8px;
+}
+
+.section_conatiner {
+    width: 100%;
+    height: auto;
+    padding: 8px;
+    margin: 0 auto;
+    min-width: 978px;
+    max-width: 1680px;
+    position: relative;
+}
+
+.section-SubDiv {
+    overflow: hidden;
+    position: relative;
+    justify-content: space-between;
+    margin: 0 auto;
+    /* display:block; */
+    max-width: 1680px;
+}
+
+/* ********************** */
+/* SLIDER CSS START HERE */
+/* ******************** */
+
+.slidebar {
+    height: 295px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slideImg_div {
+    display: inline-block;
+}
+
+/* *************************** */
+/* *************************** */
+/* *************************** */
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    height: 280px;
+    transition: transform .2s ease-out,-webkit-transform .2s ease-out;
+}
+
+/* Hide the images by default */
+.slideImg_div {
+    display: none;
+    height: 280px;
+    cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 30%;
+    width: 47px;
+    height: 104px;
+    padding: 28px 15px;
+    color: black;
+    background-color: white;
+    font-weight: bold;
+    font-size: 35px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: white;
+}
+
+/* Fading animation */
+.opacity-div {
+    position: relative;
+    overflow: hidden;
+    filter: none !important;
+    min-width: 1680px;
+    animation: opacity-div 0.1s;
+}
+
+@keyframes opacity-div {
+    from {
+        right: -300px;
+        opacity: 0;
+    }
+
+    to {
+        right: 0;
+        opacity: 1;
+    }
+}
+
+/* ********************** */
+/* SLIDER CSS ENDS HERE */
+/* ******************** */
+
+/* ************************************ */
+/* BEST PRODUICT SLIDER CSS START HERE */
+/* ********************************** */
+.best_products_slider {
+    width: 100%;
+    display: flex;
+    height: 366px;
+}
+
+.bp_slider {
+    position: relative;
+}
+
+.bp_slider_div {
+    line-height: 1.38;
+    font-weight: 400;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 8%);
+}
+
+/* *********************************** */
+/* *********************************** */
+/* *********************************** */
+.bp_slider_left {
+    width: 230px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.bp_left_text {
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 28px 10px 124px;
+}
+
+.bp-left-h2 {
+    font-size: 30px;
+    line-height: 1.38;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.bp_left_view_all {
+    margin-top: 24px;
+}
+
+.bp_view_all_text {
+    display: inline-block;
+    border-radius: 2px;
+    color: #212121;
+    padding: 10px 20px;
+    font-size: 13px;
+    font-weight: 500;
+    transition: box-shadow 0.2s ease;
+    vertical-align: super;
+    background: #fff;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 10%);
+    border: 1px solid #e0e0e0;
+    background: #2874f0;
+    color: #fff;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
+    border: none;
+}
+
+/* ******************** */
+/* ******************** */
+/* ******************** */
+/* ******************** */
+.bp_slider_right {
+    width: calc(100% - 230px);
+}
+
+.bp_slider_right_container_div {
+    overflow-x: hidden;
+    padding-bottom: 64px;
+    margin-bottom: -64px;
+    display: flex;
+    width: 100%;
+}
+
+.bp_sliderRight_contanior {
+    overflow: hidden;
+}
+
+.transform_Info {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.bp_SR_Img_A {
+    padding: 25px 15px;
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    max-height: 366px;
+    text-align: center;
+}
+
+.bp_SR_img_div {
+    position: relative;
+    margin: 0 auto;
+}
+
+.bp_SR_Img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.bp_SR_Name {
+    margin-top: 15px;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.bp_SR_price {
+    color: #388e3c;
+    padding-top: 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 16px;
+}
+
+.bp_SR_company {
+    opacity: .6;
+    padding-top: 7px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* ************************** */
+/* ************************** */
+/* ************************** */
+/* ************************** */
+.bp_Right {
+    display: block;
+}
+
+.col-2-12 {
+    width: 16.66%;
+}
+
+.bp_Right_conatiner {
+    position: relative;
+    display: block;
+    padding: 4px;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 8%);
+}
+
+.bp_Right_conatiner_A {
+    display: block;
+}
+
+.bp_Right_conatiner_img_div {
+    height: 354px;
+}
+
+.bp_Right_conatiner_img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+
+/* Next & previous buttons */
+#bpprev,
+#bpnext {
+    cursor: pointer;
+    position: absolute;
+    outline: none;
+    border: none;
+    top: 30%;
+    width: 47px;
+    height: 104px;
+    padding: 28px 15px;
+    color: black;
+    background-color: white;
+    font-weight: bold;
+    font-size: 35px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+#bpnext {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+#bpprev:hover,
+#bpnext:hover {
+    background-color: white;
+}
+
+
+._3ZYowz .bp_slide_btn.bp_left_btn {
+    opacity: 0;
+}
+
+._3ZYowz .bp_slide_btn.rek5UH {
+    left: 0;
+}
+
+._3ZYowz .bp_slide_btn {
+    position: absolute;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    pointer-events: none;
+    height: 100%;
+    top: 0;
+}
+
+._3ZYowz ._23HYg_ {
+    fill: #212121;
+}
+
+._3ZYowz .slider-btn-div-left {
+    border-radius: 0 4px 4px 0;
+}
+
+._3ZYowz .slider-btn-div {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    pointer-events: auto;
+    padding: 40px 15px;
+    box-shadow: 1px 2px 10px -1px rgb(0 0 0 / 30%);
+    background-color: gray;
+    cursor: pointer;
+}
+
+.bp_right_btn {
+    right: 0;
+}
+
+.bp_slide_btn {
+    position: absolute;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    pointer-events: none;
+    height: 100%;
+    top: 0;
+}
+
+.slider-btn-div-right {
+    border-radius: 4px 0 0 4px;
+}
+
+.slider-btn-div {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    pointer-events: auto;
+    padding: 40px 15px;
+    box-shadow: 1px 2px 10px -1px rgb(0 0 0 / 30%);
+    background-color: hsla(0, 0%, 100%, .98);
+    cursor: pointer;
+}
+
+/* *********************************** */
+/* BEST PRODUICT SLIDER CSS ENDS HERE */
+/* ********************************* */
+
+/* **********************************/
+/* RECOMMANDED ITEM CSS START HERE */
+/* ********************************/
+
+.recommanded_items {
+    width: 100%;
+    display: flex;
+}
+
+.rd_items_div {
+    position: relative;
+    /* background-color: gold; */
+    height: 409px;
+    padding: 8px 0;
+}
+
+.rd_items_sub_div {
+    line-height: 1.38;
+    font-weight: 400;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 8%);
+}
+
+/* *************************************+ */
+/* *************************************+ */
+/* *************************************+ */
+.rd_heading_div {
+    width: 100%;
+    overflow-x: hidden;
+    padding: 15px 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    display: flex;
+    /* background-color: white; */
+    align-items: center;
+}
+
+.view_All_btn_div {
+    margin-left: auto;
+}
+
+.view_All_btn_A {
+    background: #2874f0;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    padding: 10px 20px;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 10%);
+    border: 1px solid #e0e0e0;
+    font-size: 16px;
+    color: #fff;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
+    border: none;
+    display: inline-block;
+    border-radius: 2px;
+    font-size: 13px;
+    font-weight: 500;
+    transition: box-shadow .2s ease;
+    vertical-align: super;
+}
+
+.rd_heading_info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.rd_h_2 {
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 500;
+}
+
+.rd_h_3 {
+    font-size: 14px;
+    color: #c2c2c2;
+    font-weight: 400;
+}
+
+/* ********************** */
+/* ********************** */
+/* ********************** */
+
+.rd_Items_Container_div {
+    width: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    flex: none;
+}
+
+.rd_Items_Container {
+    overflow-x: hidden;
+}
+
+.rd_overflow {
+    overflow: hidden;
+    flex: none;
+}
+
+.rd_product_list {
+    display: flex;
+    align-items: stretch;
+}
+
+.rd_list_item_BOX {
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: red;
+}
+
+.rd_list_item {
+    display: flex;
+    flex-direction: column;
+}
+
+.rd_item_img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.rd_item_img_div {
+    position: relative;
+    margin: 0 auto;
+}
+
+.rd_Img_Div {
+    padding-bottom: 16px;
+}
+
+.rd_img_div_A {
+    position: relative;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.rdImgItem {
+    padding: 16px;
+    position: relative;
+    transition: box-shadow .2s ease-in-out;
+    filter: none !important;
+}
+
+/* +++++++++++++ */
+/* +++++++++++++ */
+/* +++++++++++++ */
+.rd_img_title {
+    padding-bottom: 5px;
+    overflow: hidden;
+    display: block;
+}
+
+.rd_img_rating_div {
+    margin-top: 0;
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.rd_img_rating {
+    line-height: normal;
+    display: inline-block;
+    color: #fff;
+    padding: 2px 4px 2px 6px;
+    border-radius: 3px;
+    font-weight: 500;
+    font-size: 12px;
+    vertical-align: middle;
+    background-color: #388e3c;
+}
+
+._1wB99o {
+    margin: 2px 0 0 2px;
+    height: 10px;
+}
+
+.rd_img_views {
+    padding-left: 8px;
+    font-weight: 500;
+    color: #878787;
+}
+
+.rd_img_price_div {
+    display: block;
+    padding: 0 10px 0 0;
+    margin: 3px 0;
+}
+
+.rd_img_price {
+    text-align: center;
+}
+
+.rd_img_Dis_MRP {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    color: #212121;
+}
+
+.rd_img_MRP {
+    display: inline-block;
+    margin-left: 8px;
+    text-decoration: line-through;
+    font-size: 14px;
+    color: #878787;
+}
+
+.rd_img_discount {
+    color: #388e3c;
+    font-size: 13px;
+    letter-spacing: -.2px;
+    font-weight: 500;
+}
+
+.product_like_div {
+    position: absolute;
+    display: inline-block;
+    top: 12px;
+    right: 12px;
+    cursor: pointer;
+}
+
+.product_like {
+    position: relative;
+    display: inline-flex;
+}
+
+.product_like_path {
+    fill: #c2c2c2;
+}
+
+/* *********************************/
+/* RECOMMANDED ITEM CSS ENDS HERE */
+/* *******************************/
+
+/* ************************/
+/* SECTION CSS ENDS HERE */
+/* **********************/
+
+/* *****************************/
+/* FOOTER ITEM CSS START HERE */
+/* ***************************/
+
+.footer_div {
+    background-color: #172337;
+    min-width: 978px;
+    border-top: 1px solid #ddd;
+    margin-top: 25px;
+}
+
+.ft_container {
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.Ft_rows {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.Ft_cols {
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    color: #565656;
+    background-color: #fff;
+    text-align: left;
+    margin: 0 auto;
+    padding: 25px;
+}
+
+.Ft_heading {
+    color: #848484;
+    font-weight: 500;
+    margin-top: 14px;
+    padding: 14px 0;
+}
+
+.Ft_heading_A {
+    color: #565656;
+    margin-left: 3px;
+}
+
+.Ft_Pd_div {
+    margin: 3px 0;
+}
+
+.Ft_Pd_Div_heading {
+    color: #848484;
+    text-transform: uppercase;
+    margin-right: 3px;
+}
+
+.Ft_Pd_Div_A {
+    padding: 0 5px;
+    border-right: 1px solid #333;
+    font-size: 12px;
+}
+
+.Ft_Cols_Middel {
+    margin-left: 65px;
+    width: 90% !important;
+    padding-top: 40px;
+}
+
+.FtCM_Div {
+    flex: 1;
+}
+
+.FtCM_Div_heading {
+    color: #878787;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 9px;
+}
+
+.FtCM_Div_A {
+    line-height: 2;
+    font-size: 13px;
+    font-weight: 500;
+    color: #fff;
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+._3IT4e6,
+._3JHi0r {
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.Ft_Add_links {
+    font-style: normal;
+    color: #fff;
+    background-color: #172337;
+}
+
+.Ft_Add_Links_Div {
+    /* background-color: #fff; */
+    font-size: 12px;
+}
+
+.address {
+    padding: 0 10px;
+}
+
+.Ft_links {
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+}
+
+.Ft_links_number {
+    color: white;
+    padding: 10px;
+}
+
+.Ft_Cols_Last {
+    border-top: 1px solid #454d5e;
+    padding: 25px 0;
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.Ft_links_Container {
+    display: flex;
+    flex-direction: row;
+}
+
+/* *****************************/
+/* FOOTER ITEM CSS ENDS HERE */
+/* ***************************/
+
+/* *****************************/
+/* CONTAINER CSS ENDS HERE */
+/* ***************************/
